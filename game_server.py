@@ -14,7 +14,7 @@ class GameState:
 
     def reset_game(self):
         with self.lock:
-            self.secret_number = random.randint(1, 100)
+            self.secret_number = random.randint(1, 101)
             self.game_in_progress = True
             print(f"New game started. Secret number is {self.secret_number}")
 
